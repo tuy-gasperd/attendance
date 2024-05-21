@@ -32,7 +32,7 @@ const verifyToken = (req, res, next) => {
 };
 
 // Get all data from a roles table
-app.get('/students',verifyToken, async (req, res) => {
+app.get('/students',async (req, res) => {
   try {
     const [rows] = await pool.query('SELECT * FROM students');
     res.json(rows);
