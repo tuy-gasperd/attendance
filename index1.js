@@ -31,6 +31,14 @@ const verifyToken = (req, res, next) => {
   });
 };
 
+
+//testing api
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+
 // Get all data from a roles table
 app.get('/students',verifyToken, async (req, res) => {
   try {
