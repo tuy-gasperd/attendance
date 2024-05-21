@@ -11,10 +11,10 @@ const port = 3000; // Adjust port number as needed
 
 // Database credentials
 const pool = mysql.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'attendancems'
+  host: 'dpg-cp6eqo6ct0pc73925h6g-a',
+  user: 'attendance_ucfj_user',
+  password: 'Dx6KjjTne4T3uSfUKwoNRh9ZmRCTq7eb',
+  database: 'attendance_ucfj'
 });
 
 // Middleware to verify token
